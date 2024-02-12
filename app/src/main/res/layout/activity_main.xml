@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/fragmentOne"
+        android:layout_width="150dp"
+        android:layout_height="60dp"
+        android:layout_margin="10dp"
+        android:width="0dp"
+        app:layout_constraintEnd_toStartOf="@id/fragmentTwo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:text="TPFL" />
+
+
+    <Button
+        android:id="@+id/fragmentTwo"
+        android:layout_width="150dp"
+        android:layout_height="60dp"
+        android:layout_margin="10dp"
+        android:width="0dp"
+        android:text="TO"
+        app:layout_constraintEnd_toStartOf="@id/fragmentOne"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/fragmentThree"
+        android:layout_width="150dp"
+        android:layout_height="60dp"
+        android:layout_margin="10dp"
+        android:width="0dp"
+        android:text="PPLG"
+        app:layout_constraintEnd_toStartOf="parent"
+        app:layout_constraintStart_toStartOf="@id/fragmentFour"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/fragmentFour"
+        android:layout_width="150dp"
+        android:layout_height="60dp"
+        android:layout_margin="10dp"
+        android:width="0dp"
+        app:layout_constraintEnd_toStartOf="@id/fragmentThree"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:text="Busana" />
+
+    <Button
+        android:id="@+id/fragmentFive"
+        android:layout_width="150dp"
+        android:layout_height="60dp"
+        android:layout_margin="10dp"
+        android:width="0dp"
+        app:layout_constraintEnd_toStartOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:text="Kuliner" />
+
+    <FrameLayout
+        android:id="@+id/fragmentContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+</LinearLayout>
